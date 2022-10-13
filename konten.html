@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sahrul Gunawan</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"><i></i><span>Sahrul Gunawan</span></a>
+
+      <ul class="navbar">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="konten.html" class="active">Konten</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="main">
+        <a href="tentang.html" class="user"><i class="ri-user-fill"></i>Tentang Saya</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+    <section class="konten1" id="konten1">
+      <h1 class="heading"><span>Program sederhana menggunakan </span> pointer</h1>
+    <div class="row">
+        <div class="info">
+            <span>jakarta, 02/10/2022</span> <br>
+            <br>
+            <h3>Pointer <span> adalah penunjuk suatu variabel. Karena menunjuk suatu variabel, maka pointer wajib memiliki alamat dari variabel yang ditunjuknya. Terkadang, dalam program yang besar, penghematan memori wajib untuk dilakukan. Dengan mekanisme copy dan paste nilai variabel satu kedalam variabel lain, akan sangat memboroskan memori. Dengan mekanisme pointer, suatu variabel dalam suatu fungsi dapat diakses oleh fungsi yang lain</span></h3>
+            <h3>Contoh Penggunaan Struct </h3> 
+            <br>
+             <textarea name="code" rows="3" cols="42" style="background: #111; color: #FFF; border: 2px inset rgb(82, 81, 81); line-height: 1.5em; padding: 0 7px; -moz-border-radius: 5px;"> /* STRUCT */
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+struct tipekoord{
+	int x, y;
+};
+void main(){
+struct tipekoord tA, tB;
+float dist;
+clrscr();
+ </textarea> <BR> <BR><BR>
+ <textarea name="code" rows="3" cols="42" style="background: #111; color: #FFF; border: 2px inset rgb(82, 81, 81); line-height: 1.5em; padding: 0 7px; -moz-border-radius: 5px;">printf("Titik A : \n ");
+printf("Posisi x dan y?");
+scanf("%d %d", &tA.x, &tA.y);
+printf("Titik B : \n ");
+printf("Posisi x dan y?");
+scanf("%d %d", &tB.x, &tB.y);
+dist = sqrt(pow((tA.x - tB.x),2)+pow((tA.y - tB.y),2));
+printf("\n Jarak A dan B = %.2f unit",dist);
+getch();
+}
+ </textarea><br>
+             <h3>pointer <br> <span>- Variabel bertipe data Pointer adalah variable yang isinya berupa alamat (address) dari variable lainnya. <br>
+Contoh:<br>
+     -Int a, b; /* a dan b adalah variable integer*/<br>
+     -Int *pa, *pb; /* pa dan pb adalah variable pointer*/<br><br>
+
+Saat ini isi dari pa dan pb belum ditentukan, dengan assignment berikut: <br>
+	- pa= &a; 	pb = &b; <br>
+Maka pa berisi alamat a, dan pb berisi alamat b.
+
+</span></h3> 
+
+        </div>
+    </div>
+    </section>s
+    <!--js--->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
